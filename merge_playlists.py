@@ -1,8 +1,8 @@
 from datetime import datetime
 import urllib.request
 
-URL_1 = "https://bitter-recipe-3d25.poonamchouhan076.workers.dev/"
-URL_2 = "https://icy-pond-60ea.poonamchouhan076.workers.dev/"
+URL_1 = "https://server-iota-nine-71.vercel.app/api/sex"
+URL_2 = "https://server-iota-nine-71.vercel.app/api/sexx"
 
 OUTPUT_FILE = "merged_playlist.m3u"
 
