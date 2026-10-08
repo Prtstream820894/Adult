@@ -2,8 +2,6 @@ from datetime import datetime
 import urllib.request
 
 URL_1 = "https://server-iota-nine-71.vercel.app/api/sex"
-URL_2 = "https://raw.githubusercontent.com/Prtstream820894/Bazeradult/refs/heads/main/playlist.m3u"
-
 OUTPUT_FILE = "merged_playlist.m3u"
 
 
@@ -18,9 +16,8 @@ def fetch_playlist(url):
 
 
 def main():
-  print("Fetching playlists...")
+  print("Fetching playlist...")
   content_1 = fetch_playlist(URL_1)
-  content_2 = fetch_playlist(URL_2)
 
   merged_lines = []
   merged_lines.append("#EXTM3U\n")
@@ -32,14 +29,10 @@ def main():
     if line.strip() and not line.startswith("#EXTM3U"):
       merged_lines.append(line + "\n")
 
-  for line in content_2.splitlines():
-    if line.strip() and not line.startswith("#EXTM3U"):
-      merged_lines.append(line + "\n")
-
   with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     f.writelines(merged_lines)
 
-  print(f"Playlist successfully merged and saved to {OUTPUT_FILE}")
+  print(f"Playlist successfully saved to {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":
