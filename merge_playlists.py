@@ -2,7 +2,7 @@ from datetime import datetime
 import urllib.request
 
 URL_1 = "https://server-iota-nine-71.vercel.app/api/sex"
-OUTPUT_FILE = "merged_playlist.m3u"
+OUTPUT_FILE = "sex_playlist.m3u"
 
 
 def fetch_playlist(url):
